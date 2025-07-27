@@ -1,10 +1,12 @@
 :root {
-    --primary-bg: #222;
-    --primary-color: #fff;
-    --secondary-bg: #f0f0f0;
-    --accent: #0078d7;
-    --text-color: #333;
+    --primary-bg: #18181a;
+    --primary-color: #f3f3f3;
+    --secondary-bg: #23232b;
+    --accent: #b71c1c;
+    --accent-glow: #e53935;
+    --text-color: #f3f3f3;
     --max-width: 900px;
+    --divider: linear-gradient(90deg, transparent, #b71c1c 40%, #e53935 60%, transparent);
 }
 
 /* Reset some basic styles */
@@ -15,10 +17,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--secondary-bg);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png') repeat, var(--primary-bg);
     color: var(--text-color);
     line-height: 1.6;
+    min-height: 100vh;
 }
 
 .container {
@@ -28,20 +31,30 @@ body {
 }
 
 header {
-    background-color: var(--primary-bg);
+    background: var(--secondary-bg);
     color: var(--primary-color);
-    padding: 20px 0;
+    padding: 2rem 0 1rem 0;
     text-align: center;
+    border-bottom: 3px solid var(--accent);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
 
 header h1 {
-    font-size: 2.25rem;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2.8rem;
+    color: var(--accent);
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px var(--accent-glow), 0 0 2px #000;
     margin-bottom: 10px;
 }
 
 header nav ul {
     list-style: none;
-    padding: 10px 0;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 header nav ul li {
@@ -53,71 +66,112 @@ header nav ul li a {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
-    padding: 4px 8px;
-    border-radius: 4px;
-    transition: background 0.2s, color 0.2s;
+    padding: 0.3em 1em;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 0 transparent;
 }
 
 header nav ul li a:hover,
 header nav ul li a:focus {
     background: var(--accent);
     color: #fff;
+    box-shadow: 0 0 8px var(--accent-glow);
     outline: none;
 }
 
 section {
-    padding: 40px 0;
-    text-align: center;
-    background: #fff;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    border-radius: 8px;
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--secondary-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+    border: 1.5px solid #222;
+    position: relative;
 }
 
 section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-family: 'UnifrakturCook', cursive;
+    color: var(--accent);
+    margin-top: 0;
+    text-shadow: 0 0 6px var(--accent-glow), 0 0 2px #000;
+    letter-spacing: 1px;
+    font-size: 2.1rem;
+}
+
+.divider {
+    height: 18px;
+    margin: 0 auto 2rem auto;
+    max-width: 600px;
+    background: var(--divider);
+    border-radius: 8px;
+    opacity: 0.7;
+}
+
+.news-item {
+    background: #1a1a20;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--accent);
+    box-shadow: 0 2px 8px rgba(183,28,28,0.08);
+}
+
+.hall-of-fame, .enemy-list {
+    margin-top: 1.5rem;
+}
+
+.hall-of-fame h3, .enemy-list h3 {
+    color: var(--accent-glow);
+    margin-bottom: 0.5rem;
+    font-family: 'UnifrakturCook', cursive;
+    letter-spacing: 1px;
 }
 
 ul {
-    list-style: none;
-    padding: 10px;
-    text-align: left;
-    margin: 0 auto;
-    max-width: 600px;
+    padding-left: 1.2rem;
+    margin: 0.5rem 0 1rem 0;
 }
 
 ul li {
-    margin-bottom: 12px;
-    font-size: 1.05rem;
+    margin-bottom: 0.7em;
+    position: relative;
+    padding-left: 1.2em;
 }
 
-ul li:last-child {
-    margin-bottom: 0;
-}
-
-a {
+ul li::before {
+    content: "🩸";
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    font-size: 1em;
     color: var(--accent);
-    text-decoration: underline;
-    transition: color 0.2s;
+    filter: drop-shadow(0 0 2px var(--accent-glow));
 }
 
-a:hover,
-a:focus {
-    color: #005fa3;
-    outline: none;
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border: 2px solid var(--accent);
 }
 
 footer {
-    background-color: var(--primary-bg);
+    background: var(--secondary-bg);
     color: var(--primary-color);
-    padding: 20px 0;
     text-align: center;
+    padding: 1.5rem 0 1rem 0;
+    margin-top: 2rem;
+    border-top: 3px solid var(--accent);
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.3);
 }
 
 footer ul {
     list-style: none;
     padding: 0;
+    margin: 0.5rem 0 0 0;
 }
 
 footer ul li {
@@ -126,27 +180,43 @@ footer ul li {
 }
 
 footer ul li a {
-    color: var(--primary-color);
+    color: var(--accent);
     text-decoration: none;
-    transition: color 0.2s;
+    font-weight: bold;
+    transition: color 0.2s, text-shadow 0.2s;
+    text-shadow: 0 0 4px var(--accent-glow);
 }
 
 footer ul li a:hover,
 footer ul li a:focus {
+    color: #fff;
+    text-shadow: 0 0 8px var(--accent-glow);
+    outline: none;
+}
+
+a {
     color: var(--accent);
+    text-decoration: underline;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+a:hover,
+a:focus {
+    color: var(--accent-glow);
+    text-shadow: 0 0 6px var(--accent-glow);
     outline: none;
 }
 
 /* Responsive Design */
 @media (max-width: 700px) {
-    .container, ul {
-        max-width: 95%;
-        padding: 0 8px;
-    }
     section {
-        padding: 20px 0;
+        padding: 1rem;
     }
-    header h1 {
+    nav ul {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .logo h1 {
         font-size: 1.5rem;
     }
     section h2 {

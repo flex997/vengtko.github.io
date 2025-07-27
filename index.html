@@ -4,8 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vengeance TKO - Home of the elite.</title>
+    <title>Vengeance TKO - Home of the Elite</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #18181a;
+            color: #f3f3f3;
+        }
+        header {
+            background: #2c2c34;
+            padding: 1.5rem 0;
+            text-align: center;
+            border-bottom: 3px solid #b71c1c;
+        }
+        .logo h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #b71c1c;
+            letter-spacing: 2px;
+        }
+        .logo p {
+            margin: 0.3rem 0 0 0;
+            font-size: 1.1rem;
+            color: #f3f3f3;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: #f3f3f3;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #b71c1c;
+        }
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #23232b;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        }
+        section h2 {
+            color: #b71c1c;
+            margin-top: 0;
+        }
+        .news-item {
+            background: #1a1a20;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+        .hall-of-fame, .enemy-list {
+            margin-top: 1.5rem;
+        }
+        .hall-of-fame h3, .enemy-list h3 {
+            color: #e53935;
+            margin-bottom: 0.5rem;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        footer {
+            background: #2c2c34;
+            color: #f3f3f3;
+            text-align: center;
+            padding: 1.5rem 0 1rem 0;
+            margin-top: 2rem;
+            border-top: 3px solid #b71c1c;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 0 0;
+        }
+        footer a {
+            color: #b71c1c;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            section {
+                padding: 1rem;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 0.7rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -31,7 +133,9 @@
     <section id="welcome">
         <h2>Welcome to Vengeance TKO!</h2>
         <p>We are a powerful and relentless BiteFight clan. Join us in the fight for supremacy!</p>
-        <p>We are fighting on w55: <a href="https://s44-us.bitefight.gameforge.com/" target="_blank">https://s44-us.bitefight.gameforge.com/</a></p>
+        <p>We are fighting on s44: 
+            <a href="https://s44-us.bitefight.gameforge.com/" target="_blank" rel="noopener">https://s44-us.bitefight.gameforge.com/</a>
+        </p>
         <img src="banner.jpg" alt="Vengeance TKO Clan Banner">
     </section>
 
@@ -50,7 +154,7 @@
         <h2>News & Announcements</h2>
         <div class="news-item">
             <h3>Upcoming Clan War: No info available yet!</h3>
-            <p>Stay tuned for more events and activities!<p>
+            <p>Stay tuned for more events and activities!</p>
         </div>
         <div class="news-item">
             <h3>New Member: Abyss DemonEye</h3>
@@ -64,14 +168,16 @@
         <ul>
             <li>Respect all members.</li>
             <li>Participate in clan wars.</li>
-            <li>No cheating or exploiting game mechanics. Traders are not welcome, and rightfully frown upon.</li>
-            <li>Stay active on the Game. We will assume you have become a ghost if you are unactive for more than 30 days, and you will be kicked.</li>
-            <li>Donate ONLY if the gold you have cannot help your figher directly! 
-                (If you have any amount of gold that you can no longer invest, consider donating it to the clan coffers.</li>)
-                (tip: always check for available talents, purchasable items, hideout upgrades, stats additions, etc. before ensuring you can no longer spend your gold on anything).
-                It's better to be in the coffers of the guild if you have no use for it, and you will deny gold to the werewolves.</li>
-            <li>Clan ranks will be given based on gold contribution & activity.</li>
-            <li>Contribution is not mandatory, but as we advance in the game will help your overall stats because I will always try to keep all of the rituals active. </li>            
+            <li>No cheating or exploiting game mechanics. Traders are not welcome and are rightfully frowned upon.</li>
+            <li>Stay active in the game. If you are inactive for more than 30 days, you will be considered a ghost and may be removed.</li>
+            <li>
+                Donate ONLY if the gold you have cannot help your fighter directly! 
+                (If you have gold that you can no longer invest, consider donating it to the clan coffers.)
+                <br>
+                <em>Tip: Always check for available talents, purchasable items, hideout upgrades, stats additions, etc. before donating. It's better to have unused gold in the guild coffers than to let it fall into enemy hands.</em>
+            </li>
+            <li>Clan ranks are based on gold contribution & activity.</li>
+            <li>Contribution is not mandatory, but as we advance, it will help your overall stats because we strive to keep all rituals active.</li>
         </ul>
     </section>
 
@@ -80,7 +186,7 @@
         <h2>Vengeance Raids</h2>
         <p>
             <strong>What are Vengeance Raids?</strong><br>
-            When a TKO member is attacked—whether at the House of Pain or through a regular assault—we respond with a coordinated Vengeance Raid. The name of the enemy responsible will be posted here. Any member within battle range is encouraged to strike back and will be recognized for their bravery. A Hall of Fame will honor those who avenge their clanmates.
+            When a TKO member is attacked—whether at the House of Pain or through a regular assault—we respond with a coordinated Vengeance Raid. The enemy's name will be posted here. Any member within battle range is encouraged to strike back and will be recognized for their bravery. A Hall of Fame will honor those who avenge their clanmates.
         </p>
         <p>
             <strong>If you’ve been attacked:</strong><br>
@@ -110,7 +216,7 @@
         <ul>
             <li>Clan War: Too early, server just started. To be determined.</li>
             <li>Vengeance Raid: No werewolf on the blacklist yet.</li>
-            <li>Clan Meeting: Not enough members yet. The meetings will be announced in server(US) time.</li>
+            <li>Clan Meeting: Not enough members yet. Meetings will be announced in server (US) time.</li>
         </ul>    
     </section>
 
@@ -127,8 +233,9 @@
     <footer>
         <p>Connect with us:</p>
         <ul>
-            <li><a href="https://discord.com/invite/vengeancetko">Discord (TBA)</a></li>
+            <li><a href="https://discord.com/invite/vengeancetko" target="_blank" rel="noopener">Discord (TBA)</a></li>
         </ul>
+        <p style="font-size:0.9em; color:#aaa; margin-top:1rem;">&copy; 2024 Vengeance TKO Clan. All rights reserved.</p>
     </footer>
 
 </body>

@@ -3,264 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vengeance TKO - Home of the Elite</title>
-    <!-- Gothic font for headings -->
+    <title>Vengeance TKO - Vampire Guild</title>
     <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
             background: #18181a;
             color: #f3f3f3;
+            font-family: Arial, sans-serif;
+            margin: 0;
         }
         header {
-            background: #2c2c34;
-            padding: 1.5rem 0;
+            background: #23232b;
             text-align: center;
-            border-bottom: 3px solid #b71c1c;
+            padding: 1.2rem 0 0.8rem 0;
+            border-bottom: 2px solid #b71c1c;
         }
-        .logo h1 {
-            margin: 0;
-            font-size: 2.5rem;
+        h1 {
+            font-family: 'UnifrakturCook', cursive;
             color: #b71c1c;
+            margin: 0;
+            font-size: 2rem;
             letter-spacing: 2px;
         }
-        .logo p {
-            margin: 0.3rem 0 0 0;
-            font-size: 1.1rem;
-            color: #f3f3f3;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 1rem 0 0 0;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
+        nav {
+            margin: 0.5rem 0 0 0;
         }
         nav a {
             color: #f3f3f3;
             text-decoration: none;
+            margin: 0 0.7rem;
             font-weight: bold;
+            font-size: 1rem;
             transition: color 0.2s;
         }
         nav a:hover {
             color: #b71c1c;
         }
-        section {
-            max-width: 800px;
+        main {
+            max-width: 420px;
             margin: 2rem auto;
-            padding: 2rem;
             background: #23232b;
-            border-radius: 10px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            padding: 1.2rem 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
         }
-        section h2 {
+        section {
+            margin-bottom: 1.5rem;
+        }
+        h2 {
             color: #b71c1c;
+            font-size: 1.1rem;
             margin-top: 0;
-        }
-        .news-item {
-            background: #1a1a20;
-            padding: 1rem;
-            border-radius: 6px;
-            margin-bottom: 1rem;
-        }
-        .hall-of-fame, .enemy-list {
-            margin-top: 1.5rem;
-        }
-        .hall-of-fame h3, .enemy-list h3 {
-            color: #e53935;
-            margin-bottom: 0.5rem;
+            font-family: 'UnifrakturCook', cursive;
         }
         ul {
-            padding-left: 1.2rem;
-        }
-        img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin: 1rem 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        }
-        footer {
-            background: #2c2c34;
-            color: #f3f3f3;
-            text-align: center;
-            padding: 1.5rem 0 1rem 0;
-            margin-top: 2rem;
-            border-top: 3px solid #b71c1c;
-        }
-        footer ul {
-            list-style: none;
-            padding: 0;
-            margin: 0.5rem 0 0 0;
-        }
-        footer a {
-            color: #b71c1c;
-            text-decoration: none;
-        }
-        @media (max-width: 600px) {
-            section {
-                padding: 1rem;
-            }
-            nav ul {
-                flex-direction: column;
-                gap: 0.7rem;
-            }
-        }
-        .divider {
-            height: 2px;
-            background: #b71c1c;
-            margin: 2rem 0;
-            border-radius: 1px;
+            padding-left: 1.1rem;
+            margin: 0.5rem 0;
         }
         .bat {
             color: #b71c1c;
-            font-size: 1.2em;
+            font-size: 1em;
+        }
+        a {
+            color: #b71c1c;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #23232b;
+            color: #aaa;
+            text-align: center;
+            padding: 0.8rem 0;
+            font-size: 0.95em;
+            border-top: 2px solid #b71c1c;
         }
     </style>
-</head>
-<body>
-
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <h1><span class="bat">&#x1F987;</span> Vengeance TKO <span class="bat">&#x1F987;</span></h1>
-            <p>Home of the most elite vampires on the server.</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#welcome">Home</a></li>
-                <li><a href="#roster">Clan Roster</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#rules">Rules</a></li>
-                <li><a href="#calendar">Events</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Welcome Section -->
-    <section id="welcome">
-        <h2><span class="bat">&#x1F987;</span> Welcome to Vengeance TKO! <span class="bat">&#x1F987;</span></h2>
-        <p>We are a powerful and relentless BiteFight clan. Join us in the fight for supremacy!</p>
-        <p>We are fighting on s44: 
-            <a href="https://s44-us.bitefight.gameforge.com/" target="_blank" rel="noopener">https://s44-us.bitefight.gameforge.com/</a>
-        </p>
-        <img src="banner.jpg" alt="Vengeance TKO Clan Banner">
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- Clan Roster -->
-    <section id="roster">
-        <h2><span class="bat">&#x1F987;</span> Clan Roster</h2>
-        <ul>
-            <li><strong>Leader:</strong> <a href="https://s44-us.bitefight.gameforge.com/profile/player/15812" target="_blank" rel="noopener">Dealer</a></li>
-            <li><strong>Co-Leader:</strong> Looking for active Admins, message GM 'Dealer' in-game!</li>
-            <li><strong>Members:</strong> Abyss DemonEye</li>
-        </ul>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- News & Announcements -->
-    <section id="news">
-        <h2><span class="bat">&#x1F987;</span> News & Announcements</h2>
-        <div class="news-item">
-            <h3>Upcoming Clan War: No info available yet!</h3>
-            <p>Stay tuned for more events and activities!</p>
-        </div>
-        <div class="news-item">
-            <h3>New Member: <a href="https://s44-us.bitefight.gameforge.com/profile/player/15810" target="_blank" rel="noopener">Abyss DemonEye</a></h3>
-            <p>Welcome to our newest member, Abyss DemonEye! We're excited to have you on board.</p>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- Clan Rules & Guidelines -->
-    <section id="rules">
-        <h2><span class="bat">&#x1F987;</span> Clan Rules</h2>
-        <ul>
-            <li>Respect all members.</li>
-            <li>Participate in clan wars.</li>
-            <li>No cheating or exploiting game mechanics. Traders are not welcome and are rightfully frowned upon.</li>
-            <li>Stay active in the game. If you are inactive for more than 30 days, you will be considered a ghost and may be removed.</li>
-            <li>
-                Donate ONLY if the gold you have cannot help your fighter directly! 
-                (If you have gold that you can no longer invest, consider donating it to the clan coffers.)
-                <br>
-                <em>Tip: Always check for available talents, purchasable items, hideout upgrades, stats additions, etc. before donating. It's better to have unused gold in the guild coffers than to let it fall into enemy hands.</em>
-            </li>
-            <li>Clan ranks are based on gold contribution & activity.</li>
-            <li>Contribution is not mandatory, but as we advance, it will help your overall stats because we strive to keep all rituals active.</li>
-        </ul>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- Vengeance Raids -->
-    <section id="raids">
-        <h2><span class="bat">&#x1F987;</span> Vengeance Raids</h2>
-        <p>
-            <strong>What are Vengeance Raids?</strong><br>
-            When a TKO member is attacked—whether at the House of Pain or through a regular assault—we respond with a coordinated Vengeance Raid. The enemy's name will be posted here. Any member within battle range is encouraged to strike back and will be recognized for their bravery. A Hall of Fame will honor those who avenge their clanmates.
-        </p>
-        <p>
-            <strong>If you’ve been attacked:</strong><br>
-            If you’re targeted by an enemy and cannot post a guild message due to your rank, please contact GM <strong>Dealer</strong> in-game. The enemy’s name will be added to our list so others can assist in retaliation.
-        </p>
-        <p>
-            <strong>If you’ve avenged a clanmate:</strong><br>
-            If you defeat an enemy who attacked a TKO member, notify GM <strong>Dealer</strong> to be added to the Hall of Fame. If you can post guild messages, please share your victory with the clan. Admins and the Guild Master regularly review member stats and descriptions—if you mention your act of vengeance in your profile, it will be recognized and celebrated.
-        </p>
-        <div class="hall-of-fame">
-            <h3>Hall of Fame</h3>
-            <ul>
-                <li>No entries yet. Be the first to earn your place!</li>
-            </ul>
-        </div>
-        <div class="enemy-list">
-            <h3>Enemies List</h3>
-            <ul>
-                <li>No enemies listed. Stay vigilant!</li>
-            </ul>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- Event Calendar -->
-    <section id="calendar">
-        <h2><span class="bat">&#x1F987;</span> Upcoming Events</h2>
-        <ul>
-            <li>Clan War: Too early, server just started. To be determined.</li>
-            <li>Vengeance Raid: No werewolf on the blacklist yet.</li>
-            <li>Clan Meeting: Not enough members yet. Meetings will be announced in server (US) time.</li>
-        </ul>    
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- Achievements Section -->
-    <section id="achievements">
-        <h2><span class="bat">&#x1F987;</span> Clan Achievements</h2>
-        <ul>
-            <li>Most Improved Clan Member: Will be announced here!</li>
-            <li>Top Damage Dealer in Clan War: Will be announced here!</li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>Connect with us:</p>
-        <ul>
-            <li><a href="https://discord.com/invite/vengeancetko" target="_blank" rel="noopener">Discord (TBA)</a></li>
-        </ul>
-        <p style="font-size:0.9em; color:#aaa; margin-top:1rem;">&copy; 2024 Vengeance TKO Clan. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
